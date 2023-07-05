@@ -38,8 +38,8 @@ console.log(props.msgs, props.useId)
     <div class="chat-bottom">
       <div class="chat-area">
         <textarea class="chat-area-input" v-model="text" placeholder="请输入内容点击发送"></textarea>
-        <div class="chat-send-btn">添加</div>
-        <div class="chat-send-btn" @click="send">发送</div>
+        <div class="chat-btn">添加</div>
+        <div class="chat-btn" @click="send">发送</div>
       </div>
     </div>
   </div>
@@ -131,5 +131,8 @@ console.log(props.msgs, props.useId)
   color: #505050;
   min-height: 35px;
   font-size: 16px;
+}
+.chat-btn {
+  margin-right: 8px;
 }
 </style>
